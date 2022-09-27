@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 5vw;
+  grid-template-rows: auto auto auto auto;
+}
+
+header {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+header nav {
+  padding: 1rem 0;
+  grid-column: 2/4;
+  grid-row: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  display: block;
+  max-width: 5.563rem;
+}
+
+.btn {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.625rem 2rem;
+  border-radius: 1.75rem;
+  line-height: 1.75rem;
+  transition: opacity 0.5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.btn-dark {
+  background-color: #13183F;
+}
+
+.btn-orange {
+  background: linear-gradient(#FF6F48, #F02AA6);
+}
+
+.btn-purple {
+  background: linear-gradient(#F02AA6, #4851FF);
+}
+
+main {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: repeat(3, auto);
+  grid-column: 1/5;
+  background: linear-gradient(#FFFFFF, #F0F1FF);
+}
+main .description {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+main .description h1 {
+  margin-top: 1.375rem;
+  font-size: 2.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+}
+main .description p {
+  color: #83869A;
+  margin-top: 1.625rem;
+  line-height: 1.625rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+main .description button {
+  margin-top: 1.5rem;
+  margin-bottom: 2.875rem;
+  padding: 0.9rem 2.375rem;
+}
+main picture {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+main picture img {
+  display: block;
+  width: 100%;
+  transform: scale(1.15);
+}
+main .card-group {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  row-gap: 2.75rem;
+  padding-bottom: 5rem;
+}
+main .card-group .card-sp {
+  background: linear-gradient(#FF6F48, #F02AA6);
+  padding: 1.5rem 1.75rem;
+  border-radius: 0.625rem;
+}
+main .card-group .card-sp h2 {
+  color: #FFFFFF;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+main .card-group .card {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 0.625rem;
+  padding: 1.75rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+main .card-group .card img {
+  max-width: 3.5rem;
+  position: absolute;
+  top: -1.75rem;
+  left: 1.75rem;
+}
+main .card-group .card h2 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+main .card-group .card p {
+  color: #83869A;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.625rem;
+}
+main .card-group .card a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #F74780;
+}
+
+footer {
+  background-color: #13183F;
+  grid-column: 1/5;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+footer nav {
+  padding: 2rem 0;
+  grid-column: 2/4;
+  grid-row: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer nav img {
+  display: block;
+  max-width: 5.563rem;
+}
+
+/*# sourceMappingURL=index.css.map */

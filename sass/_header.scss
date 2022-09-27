@@ -1,0 +1,20 @@
+header {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: subgrid;
+
+    nav{
+        padding: 1rem 0;
+        grid-column: 2 / 4;
+        grid-row: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            display: block;
+            max-width: 5.563rem;
+        }
+    }
+}
