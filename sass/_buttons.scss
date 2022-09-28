@@ -7,7 +7,7 @@
     color: variables.$white;
     border: none;
     padding: 0.625rem 1.5rem;
-    border-radius: 1.75rem;
+    border-radius: 2rem;
     line-height: 1.75rem;
     transition: opacity 0.5s;
 }
@@ -27,4 +27,10 @@
 
 .btn-purple {
     background: variables.$g-purple;
+}
+
+.btn-lg {    
+        margin-top: 1.5rem;
+        margin-bottom: 2.875rem;
+        padding: 0.9rem 2.375rem;    
 }

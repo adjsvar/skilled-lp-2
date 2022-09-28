@@ -1,11 +1,19 @@
 @media (min-width: 48rem) {
+
+    header {
+        grid-template-columns: 8vw 1fr 1fr 8vw ;
+    }
+
     main {
+        grid-template-columns: 8vw 1fr 1fr 8vw ;
         grid-template-rows: 5rem 38rem auto auto;
         align-items: center;
+
         .description {        
             grid-column: 2 / 3;
             grid-row: 2 / 3;
-            margin-top: 0;  
+            margin-top: 0;
+            z-index: 100;
         }
 
         picture {
@@ -21,7 +29,7 @@
                 transform: scale(1);
                 max-width: 40rem;
                 position: relative;
-                right: -15rem;        
+                right: -13rem;        
                 
             }
             
@@ -29,8 +37,125 @@
 
         .card-group {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             column-gap: 1rem;
+        }
+    }
+
+    footer {
+        grid-template-columns: 8vw 1fr 1fr 8vw ;
+    }
+}
+
+@media (min-width: 64rem) {
+    body {
+        
+        header {
+            grid-template-columns: 10vw 1fr 1fr 10vw ;
+
+            img {
+                max-width: 7.5rem;
+            }
+        }
+
+        main {
+            grid-template-columns: 10vw 1fr 1fr 10vw ;
+            grid-template-rows: 5rem 50rem auto auto;
+
+            .description {
+                h1 {
+                    font-size: 3.5rem;
+                }
+
+                p {
+                    font-size: 1.125rem;
+                    max-width: 27rem;
+                }                
+            }
+    
+            picture {            
+    
+                img {
+                    max-width: 62rem;
+                    top: -5rem; 
+                    right: -25rem;
+                }
+                
+            }
+    
+            .card-group {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                column-gap: 1.875rem;
+            }
+        }
+
+        footer {
+            grid-template-columns: 10vw 1fr 1fr 10vw ;
+        }
+    }
+}
+
+@media (min-width: 90rem) {
+    body {
+        
+        header {
+            grid-template-columns: 20vw 1fr 1fr 20vw ;
+
+            img {
+                
+            }
+        }
+
+        main {
+            grid-template-columns: 20vw 1fr 1fr 20vw ;     
+
+            picture {            
+    
+                img {
+                    max-width: 62rem;
+                    top: -5rem; 
+                    right: -15rem;
+                }
+                
+            }
+                
+        }
+
+        footer {
+            grid-template-columns: 20vw 1fr 1fr 20vw ;
+        }
+    }
+}
+
+@media (min-width: 112rem) {
+    body {
+        
+        header {
+            grid-template-columns: 25vw 1fr 1fr 25vw ;
+
+            img {
+                
+            }
+        }
+
+        main {
+            grid-template-columns: 25vw 1fr 1fr 25vw ;     
+
+            picture {            
+    
+                img {
+                    max-width: 62rem;
+                    top: -5rem; 
+                    right: -7rem;
+                }
+                
+            }
+                
+        }
+
+        footer {
+            grid-template-columns: 25vw 1fr 1fr 25vw ;
         }
     }
 }
